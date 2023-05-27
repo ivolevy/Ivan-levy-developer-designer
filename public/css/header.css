@@ -1,0 +1,178 @@
+.header{
+    margin-top: 70px;
+    color: #fff;
+    display: grid;
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 350px;
+}
+
+.spanheader{
+    color: #e61515;
+    font-size: 1.2em;
+}
+
+.titleHeader{
+    font-size: 4em;
+}
+
+.th2{
+    color: gray;
+}
+
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes typing{
+    from{
+        border-color: transparent;
+    }
+    to{
+        border-color: gray;
+    }
+}
+
+.textHeader{
+    font-size: 1em;
+    color: rgb(193, 185, 185);
+}
+
+.buttonHeader{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 16px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.buttonHeader:hover{
+    border: 2px solid #e61515;
+    
+}
+
+.buttonHeader:not(:hover) {
+    transform: scale(1);
+}
+
+@media(max-width: 481px){
+    .header{
+        height: auto;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        margin-bottom: 550px;
+    }
+    
+    .infoHeader{
+        width: 90%;
+    }
+    
+    .spanheader{
+        font-size: 0.9em;
+    }
+    
+    .titleHeader{
+        font-size: 2rem;
+    }
+    
+    .textHeader{
+        font-size: 0.8em;
+    }
+    
+    .buttonHeader{
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 10px;
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+    
+    .buttonHeader:hover{
+        border: 2px solid #e61515;
+        transition: all 0.4s;
+    }
+}
+
+@media(min-width: 482px) and (max-width: 769px){
+    .header{
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        margin-bottom: 650px;
+    }
+    
+    .infoHeader{
+        width: 90%;
+    }
+
+    .spanheader{
+        font-size: 1.1em;
+    }
+    
+    .titleHeader{
+        font-size: 36px;
+    }
+    
+    .textHeader{
+        font-size: 1em;
+    }
+    
+    .buttonHeader{
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 12px;
+        font-size: 0.9em;
+        font-weight: 600;
+        transition: all 0.4 ease;
+    }
+    
+    .buttonHeader:hover{
+        border: 2px solid #e61515;
+        
+    }
+
+}
+
+@media(max-width: 1024px){
+
+}
+
+.typing, .th2Type{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 8ch;
+
+    animation: typing 1.4s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    -moz-animation-iteration-count: infinite;
+}
+
+.thankyType{
+    width: 16ch;
+}
+
+@keyframes typing{
+    from{width: 0;}
+}
+
+@keyframes blink{
+    50%{border-color: transparent;}
+}
